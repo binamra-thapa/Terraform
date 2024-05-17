@@ -20,6 +20,7 @@ module "example_instance" {
 
 }
 
+#output
 output "example_instance" {
   value = {
     instance_id   = module.example_instance.instance_id
