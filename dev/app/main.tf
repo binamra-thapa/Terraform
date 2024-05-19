@@ -16,7 +16,8 @@ module "example_instance" {
   instance_type  = "t2.micro"      
   key_name       = "key-value"
   firewall_group = ["SSH GROUP"] 
-  instance_name = "binnie"
+  hostname       = "binnie"
+  device_name    = "Testing"
 
 }
 

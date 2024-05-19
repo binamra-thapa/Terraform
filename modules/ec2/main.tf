@@ -5,6 +5,7 @@ resource "aws_instance" "instance" {
   key_name                  = var.key_name
   security_groups           = var.firewall_group
   tags          = {
-    instance_name = var.instance_name
+    instance_name = var.hostname
+    Name = var.device_name
   }
 }
