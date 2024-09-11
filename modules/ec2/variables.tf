@@ -15,8 +15,13 @@ variable "key_name" {
   description = "The name of the key pair to associate with the EC2 instance."
 }
 
-variable "instance_name" {
+variable "hostname" {
     description = "Name of the resource being created."
+}
+variable "device_name" {
+  description = "Name tag for the resource"
+  type        = string
+  default     = "Example Tag"
 }
 
 variable "firewall_group" {
